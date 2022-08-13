@@ -1,21 +1,20 @@
-import styled, { css } from "styled-components"
-
+import styled, { css } from 'styled-components'
 
 const variants = {
   primary: {
-    color: "#ffffff",
-    backgroundColor: "#1D3461",
-    border: "none"
+    color: '#ffffff',
+    backgroundColor: '#1D3461',
+    border: 'none',
   },
   success: {
-    color: "#ffffff",
-    backgroundColor: "#5AB203",
-    border: "none"
+    color: '#ffffff',
+    backgroundColor: '#5AB203',
+    border: 'none',
   },
   transparent: {
-    color: "#111111",
-    backgroundColor: "transparent",
-    border: "1px solid black"
+    color: '#111111',
+    backgroundColor: 'transparent',
+    border: '1px solid black',
   },
 } as const
 
@@ -30,10 +29,10 @@ export const StyledButton = styled.button<StyledButtonProps>`
 
     // cssを使い、複数のスタイルを返す
     return css`
-    color: ${style.color};
-    background-color: ${style.backgroundColor};
-    border: ${style.border};
-  `;
+      color: ${style.color};
+      background-color: ${style.backgroundColor};
+      border: ${style.border};
+    `
   }}
 
   border-radius: 12px;
